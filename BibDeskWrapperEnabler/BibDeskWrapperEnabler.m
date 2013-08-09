@@ -57,8 +57,10 @@ static int32_t systemVersion()
 {
     static SInt32 version = 0;
     if (!version)
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
         Gestalt(gestaltSystemVersion, &version);
-    
+#pragma clang diagnostic pop
     return version;
 }
 
