@@ -6,9 +6,25 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		BF16BA3A17B506B50003C830 /* Distribute */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = BF16BA3B17B506B50003C830 /* Build configuration list for PBXAggregateTarget "Distribute" */;
+			buildPhases = (
+				BF16BA4017B506E40003C830 /* ShellScript */,
+			);
+			dependencies = (
+				BF16BA3F17B506DD0003C830 /* PBXTargetDependency */,
+			);
+			name = Distribute;
+			productName = Distribute;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		BF16BA3517B500E60003C830 /* BibDeskWrapperEnablerSparkle.h in Headers */ = {isa = PBXBuildFile; fileRef = BF16BA3317B500E60003C830 /* BibDeskWrapperEnablerSparkle.h */; };
 		BF16BA3617B500E60003C830 /* BibDeskWrapperEnablerSparkle.m in Sources */ = {isa = PBXBuildFile; fileRef = BF16BA3417B500E60003C830 /* BibDeskWrapperEnablerSparkle.m */; };
+		BF16BA3817B506630003C830 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = BF16BA3717B506630003C830 /* dsa_pub.pem */; };
 		BF1B35E617B4B75A00F95526 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1B35E517B4B75A00F95526 /* Cocoa.framework */; };
 		BF1B35F017B4B75B00F95526 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF1B35EE17B4B75B00F95526 /* InfoPlist.strings */; };
 		BF1B35F217B4B75B00F95526 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1B35F117B4B75B00F95526 /* main.m */; };
@@ -28,6 +44,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		BF16BA3E17B506DD0003C830 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF1B35DA17B4B75A00F95526 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF1B35E117B4B75A00F95526;
+			remoteInfo = BibDeskWrapper;
+		};
 		BF1B361117B4BA1600F95526 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BF1B35DA17B4B75A00F95526 /* Project object */;
@@ -40,6 +63,7 @@
 /* Begin PBXFileReference section */
 		BF16BA3317B500E60003C830 /* BibDeskWrapperEnablerSparkle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BibDeskWrapperEnablerSparkle.h; sourceTree = "<group>"; };
 		BF16BA3417B500E60003C830 /* BibDeskWrapperEnablerSparkle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BibDeskWrapperEnablerSparkle.m; sourceTree = "<group>"; };
+		BF16BA3717B506630003C830 /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
 		BF1B35E217B4B75A00F95526 /* BibDeskWrapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BibDeskWrapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF1B35E517B4B75A00F95526 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		BF1B35E817B4B75A00F95526 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -178,6 +202,7 @@
 				BF1B361F17B4D3B400F95526 /* cacheDoc.icns */,
 				BF1B362117B4D3C300F95526 /* searchDocIcon.icns */,
 				BF1B362317B4D3D700F95526 /* risDocIcon.icns */,
+				BF16BA3717B506630003C830 /* dsa_pub.pem */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -204,6 +229,7 @@
 				BF1B35DE17B4B75A00F95526 /* Sources */,
 				BF1B35DF17B4B75A00F95526 /* Frameworks */,
 				BF1B35E017B4B75A00F95526 /* Resources */,
+				BF16BA4117B5080E0003C830 /* Update Version Numbers */,
 			);
 			buildRules = (
 			);
@@ -256,6 +282,7 @@
 			targets = (
 				BF1B35E117B4B75A00F95526 /* BibDeskWrapper */,
 				BF1B360517B4B8A600F95526 /* BibDeskWrapperEnabler */,
+				BF16BA3A17B506B50003C830 /* Distribute */,
 			);
 		};
 /* End PBXProject section */
@@ -274,10 +301,41 @@
 				BF1B362017B4D3B400F95526 /* cacheDoc.icns in Resources */,
 				BF1B362217B4D3C300F95526 /* searchDocIcon.icns in Resources */,
 				BF1B362417B4D3D700F95526 /* risDocIcon.icns in Resources */,
+				BF16BA3817B506630003C830 /* dsa_pub.pem in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BF16BA4017B506E40003C830 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -o errexit\n\n[ $CONFIGURATION = Release ] || { echo Distribution target requires \"'Release'\" build style; false; }\n\nVERSION=$(defaults read \"$BUILT_PRODUCTS_DIR/$PROJECT_NAME.app/Contents/Info\" CFBundleShortVersionString)\nBUNDLE_VERSION=$(defaults read \"$BUILT_PRODUCTS_DIR/$PROJECT_NAME.app/Contents/Info\" CFBundleVersion)\nDOWNLOAD_BASE_URL=\"http://sourceforge.net/projects/xmds/files/\"\nRELEASENOTES_URL=\"http://www.xmds.org/release-notes.html#version-$VERSION\"\n\nARCHIVE_FILENAME=\"$PROJECT_NAME-$VERSION.zip\"\nDOWNLOAD_URL=\"$DOWNLOAD_BASE_URL/$ARCHIVE_FILENAME/download\"\nKEYCHAIN_PRIVKEY_NAME=\"BibDeskWrapper Sparkle Private Key\"\n\nWD=$PWD\ncd \"$BUILT_PRODUCTS_DIR\"\nrm -f \"$PROJECT_NAME\"*.zip\nditto -ck --keepParent \"$PROJECT_NAME.app\" \"$ARCHIVE_FILENAME\"\n\nSIZE=$(stat -f %z \"$ARCHIVE_FILENAME\")\nPUBDATE=$(LC_TIME=en_US date +\"%a, %d %b %G %T %z\")\nSIGNATURE=$(\nopenssl dgst -sha1 -binary < \"$ARCHIVE_FILENAME\" \\\n| openssl dgst -dss1 -sign <(security find-generic-password -g -s \"$KEYCHAIN_PRIVKEY_NAME\" 2>&1 1>/dev/null | perl -pe '($_) = /(-----BEGIN DSA PRIVATE KEY-----.+-----END DSA PRIVATE KEY-----)/; s/\\\\012/\\n/g') \\\n| openssl enc -base64\n)\n\n[ $SIGNATURE ] || { echo Unable to load signing private key with name \"'$KEYCHAIN_PRIVKEY_NAME'\" from keychain; false; }\n\ncat > ${WD}/appcast/appcast-${VERSION}.xml <<EOF\n<item>\n<title>XMDS $VERSION</title>\n<sparkle:releaseNotesLink>$RELEASENOTES_URL</sparkle:releaseNotesLink>\n<pubDate>$PUBDATE</pubDate>\n<enclosure\nurl=\"$DOWNLOAD_URL\"\nsparkle:version=\"$BUNDLE_VERSION\"\nsparkle:shortVersionString=\"$VERSION\"\ntype=\"application/octet-stream\"\nlength=\"$SIZE\"\nsparkle:dsaSignature=\"$SIGNATURE\"\n/>\n</item>\nEOF\n\necho scp \"'$BUILT_PRODUCTS_DIR/$ARCHIVE_FILENAME'\" frs.sf.net:/home/frs/project/x/xm/xmds/\n\necho \"Merge $WD/appcast/appcast-${VERSION}.xml into $WD/appcast/appcast.xml, then:\"\necho scp -r \"$WD/appcast/*\" web.sf.net:/home/project-web/xmds/htdocs";
+		};
+		BF16BA4117B5080E0003C830 /* Update Version Numbers */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Update Version Numbers";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -o errexit\n\nPLISTBUDDY=\"/usr/libexec/PlistBuddy\"\n\ncd ${SRCROOT}\nBUILD=`git log --pretty=format:'' | wc -l`\n#BUILD=`./buildNumber.rb -d ../ | awk '{print $1}'`\n$PLISTBUDDY ${BUILT_PRODUCTS_DIR}/${FULL_PRODUCT_NAME}/Contents/Info.plist -c \"Set :CFBundleVersion $BUILD\"\n\nSHORTVERSION_NAME=`git describe --tags --always`\n$PLISTBUDDY ${BUILT_PRODUCTS_DIR}/${FULL_PRODUCT_NAME}/Contents/Info.plist -c \"Set :CFBundleShortVersionString $SHORTVERSION_NAME\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BF1B35DE17B4B75A00F95526 /* Sources */ = {
@@ -302,6 +360,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		BF16BA3F17B506DD0003C830 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF1B35E117B4B75A00F95526 /* BibDeskWrapper */;
+			targetProxy = BF16BA3E17B506DD0003C830 /* PBXContainerItemProxy */;
+		};
 		BF1B361217B4BA1600F95526 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = BF1B360517B4B8A600F95526 /* BibDeskWrapperEnabler */;
@@ -337,6 +400,20 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		BF16BA3C17B506B50003C830 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BF16BA3D17B506B50003C830 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		BF1B35FD17B4B75B00F95526 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -445,6 +522,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		BF16BA3B17B506B50003C830 /* Build configuration list for PBXAggregateTarget "Distribute" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF16BA3C17B506B50003C830 /* Debug */,
+				BF16BA3D17B506B50003C830 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		BF1B35DD17B4B75A00F95526 /* Build configuration list for PBXProject "BibDeskWrapper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
