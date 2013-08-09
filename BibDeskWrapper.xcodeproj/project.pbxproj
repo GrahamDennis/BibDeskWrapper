@@ -1,0 +1,309 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF1B35E617B4B75A00F95526 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1B35E517B4B75A00F95526 /* Cocoa.framework */; };
+		BF1B35F017B4B75B00F95526 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF1B35EE17B4B75B00F95526 /* InfoPlist.strings */; };
+		BF1B35F217B4B75B00F95526 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1B35F117B4B75B00F95526 /* main.m */; };
+		BF1B35F617B4B75B00F95526 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = BF1B35F417B4B75B00F95526 /* Credits.rtf */; };
+		BF1B35F917B4B75B00F95526 /* GRDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1B35F817B4B75B00F95526 /* GRDAppDelegate.m */; };
+		BF1B35FC17B4B75B00F95526 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF1B35FA17B4B75B00F95526 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BF1B35E217B4B75A00F95526 /* BibDeskWrapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BibDeskWrapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF1B35E517B4B75A00F95526 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		BF1B35E817B4B75A00F95526 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		BF1B35E917B4B75A00F95526 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		BF1B35EA17B4B75A00F95526 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BF1B35ED17B4B75B00F95526 /* BibDeskWrapper-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BibDeskWrapper-Info.plist"; sourceTree = "<group>"; };
+		BF1B35EF17B4B75B00F95526 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BF1B35F117B4B75B00F95526 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BF1B35F317B4B75B00F95526 /* BibDeskWrapper-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BibDeskWrapper-Prefix.pch"; sourceTree = "<group>"; };
+		BF1B35F517B4B75B00F95526 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		BF1B35F717B4B75B00F95526 /* GRDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GRDAppDelegate.h; sourceTree = "<group>"; };
+		BF1B35F817B4B75B00F95526 /* GRDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GRDAppDelegate.m; sourceTree = "<group>"; };
+		BF1B35FB17B4B75B00F95526 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF1B35DF17B4B75A00F95526 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF1B35E617B4B75A00F95526 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BF1B35D917B4B75A00F95526 = {
+			isa = PBXGroup;
+			children = (
+				BF1B35EB17B4B75A00F95526 /* BibDeskWrapper */,
+				BF1B35E417B4B75A00F95526 /* Frameworks */,
+				BF1B35E317B4B75A00F95526 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BF1B35E317B4B75A00F95526 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF1B35E217B4B75A00F95526 /* BibDeskWrapper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF1B35E417B4B75A00F95526 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF1B35E517B4B75A00F95526 /* Cocoa.framework */,
+				BF1B35E717B4B75A00F95526 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF1B35E717B4B75A00F95526 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF1B35E817B4B75A00F95526 /* AppKit.framework */,
+				BF1B35E917B4B75A00F95526 /* CoreData.framework */,
+				BF1B35EA17B4B75A00F95526 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		BF1B35EB17B4B75A00F95526 /* BibDeskWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				BF1B35F717B4B75B00F95526 /* GRDAppDelegate.h */,
+				BF1B35F817B4B75B00F95526 /* GRDAppDelegate.m */,
+				BF1B35FA17B4B75B00F95526 /* MainMenu.xib */,
+				BF1B35EC17B4B75B00F95526 /* Supporting Files */,
+			);
+			path = BibDeskWrapper;
+			sourceTree = "<group>";
+		};
+		BF1B35EC17B4B75B00F95526 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BF1B35ED17B4B75B00F95526 /* BibDeskWrapper-Info.plist */,
+				BF1B35EE17B4B75B00F95526 /* InfoPlist.strings */,
+				BF1B35F117B4B75B00F95526 /* main.m */,
+				BF1B35F317B4B75B00F95526 /* BibDeskWrapper-Prefix.pch */,
+				BF1B35F417B4B75B00F95526 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF1B35E117B4B75A00F95526 /* BibDeskWrapper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF1B35FF17B4B75B00F95526 /* Build configuration list for PBXNativeTarget "BibDeskWrapper" */;
+			buildPhases = (
+				BF1B35DE17B4B75A00F95526 /* Sources */,
+				BF1B35DF17B4B75A00F95526 /* Frameworks */,
+				BF1B35E017B4B75A00F95526 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BibDeskWrapper;
+			productName = BibDeskWrapper;
+			productReference = BF1B35E217B4B75A00F95526 /* BibDeskWrapper.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF1B35DA17B4B75A00F95526 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = GRD;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Graham Dennis";
+			};
+			buildConfigurationList = BF1B35DD17B4B75A00F95526 /* Build configuration list for PBXProject "BibDeskWrapper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BF1B35D917B4B75A00F95526;
+			productRefGroup = BF1B35E317B4B75A00F95526 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF1B35E117B4B75A00F95526 /* BibDeskWrapper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF1B35E017B4B75A00F95526 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF1B35F017B4B75B00F95526 /* InfoPlist.strings in Resources */,
+				BF1B35F617B4B75B00F95526 /* Credits.rtf in Resources */,
+				BF1B35FC17B4B75B00F95526 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF1B35DE17B4B75A00F95526 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF1B35F217B4B75B00F95526 /* main.m in Sources */,
+				BF1B35F917B4B75B00F95526 /* GRDAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BF1B35EE17B4B75B00F95526 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF1B35EF17B4B75B00F95526 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BF1B35F417B4B75B00F95526 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF1B35F517B4B75B00F95526 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		BF1B35FA17B4B75B00F95526 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF1B35FB17B4B75B00F95526 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BF1B35FD17B4B75B00F95526 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		BF1B35FE17B4B75B00F95526 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		BF1B360017B4B75B00F95526 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BibDeskWrapper/BibDeskWrapper-Prefix.pch";
+				INFOPLIST_FILE = "BibDeskWrapper/BibDeskWrapper-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BF1B360117B4B75B00F95526 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BibDeskWrapper/BibDeskWrapper-Prefix.pch";
+				INFOPLIST_FILE = "BibDeskWrapper/BibDeskWrapper-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF1B35DD17B4B75A00F95526 /* Build configuration list for PBXProject "BibDeskWrapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF1B35FD17B4B75B00F95526 /* Debug */,
+				BF1B35FE17B4B75B00F95526 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF1B35FF17B4B75B00F95526 /* Build configuration list for PBXNativeTarget "BibDeskWrapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF1B360017B4B75B00F95526 /* Debug */,
+				BF1B360117B4B75B00F95526 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF1B35DA17B4B75A00F95526 /* Project object */;
+}
