@@ -13,7 +13,22 @@
 		BF1B35F617B4B75B00F95526 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = BF1B35F417B4B75B00F95526 /* Credits.rtf */; };
 		BF1B35F917B4B75B00F95526 /* GRDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1B35F817B4B75B00F95526 /* GRDAppDelegate.m */; };
 		BF1B35FC17B4B75B00F95526 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF1B35FA17B4B75B00F95526 /* MainMenu.xib */; };
+		BF1B360717B4B8A700F95526 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1B35E517B4B75A00F95526 /* Cocoa.framework */; };
+		BF1B360D17B4B8A700F95526 /* BibDeskWrapperEnabler.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1B360C17B4B8A700F95526 /* BibDeskWrapperEnabler.m */; };
+		BF1B361317B4BA1C00F95526 /* BibDeskWrapperEnabler.dylib in Resources */ = {isa = PBXBuildFile; fileRef = BF1B360617B4B8A600F95526 /* BibDeskWrapperEnabler.dylib */; };
+		BF1B361617B4BBF000F95526 /* BDSKLinkedFileDropboxEnabler.h in Headers */ = {isa = PBXBuildFile; fileRef = BF1B361417B4BBF000F95526 /* BDSKLinkedFileDropboxEnabler.h */; };
+		BF1B361717B4BBF000F95526 /* BDSKLinkedFileDropboxEnabler.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1B361517B4BBF000F95526 /* BDSKLinkedFileDropboxEnabler.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BF1B361117B4BA1600F95526 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF1B35DA17B4B75A00F95526 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF1B360517B4B8A600F95526;
+			remoteInfo = BibDeskWrapperEnabler;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		BF1B35E217B4B75A00F95526 /* BibDeskWrapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BibDeskWrapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -29,6 +44,12 @@
 		BF1B35F717B4B75B00F95526 /* GRDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GRDAppDelegate.h; sourceTree = "<group>"; };
 		BF1B35F817B4B75B00F95526 /* GRDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GRDAppDelegate.m; sourceTree = "<group>"; };
 		BF1B35FB17B4B75B00F95526 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		BF1B360617B4B8A600F95526 /* BibDeskWrapperEnabler.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = BibDeskWrapperEnabler.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF1B360A17B4B8A700F95526 /* BibDeskWrapperEnabler-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BibDeskWrapperEnabler-Prefix.pch"; sourceTree = "<group>"; };
+		BF1B360B17B4B8A700F95526 /* BibDeskWrapperEnabler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BibDeskWrapperEnabler.h; sourceTree = "<group>"; };
+		BF1B360C17B4B8A700F95526 /* BibDeskWrapperEnabler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BibDeskWrapperEnabler.m; sourceTree = "<group>"; };
+		BF1B361417B4BBF000F95526 /* BDSKLinkedFileDropboxEnabler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSKLinkedFileDropboxEnabler.h; sourceTree = "<group>"; };
+		BF1B361517B4BBF000F95526 /* BDSKLinkedFileDropboxEnabler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDSKLinkedFileDropboxEnabler.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +61,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BF1B360317B4B8A600F95526 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF1B360717B4B8A700F95526 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -47,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				BF1B35EB17B4B75A00F95526 /* BibDeskWrapper */,
+				BF1B360817B4B8A700F95526 /* BibDeskWrapperEnabler */,
 				BF1B35E417B4B75A00F95526 /* Frameworks */,
 				BF1B35E317B4B75A00F95526 /* Products */,
 			);
@@ -56,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				BF1B35E217B4B75A00F95526 /* BibDeskWrapper.app */,
+				BF1B360617B4B8A600F95526 /* BibDeskWrapperEnabler.dylib */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,7 +133,38 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		BF1B360817B4B8A700F95526 /* BibDeskWrapperEnabler */ = {
+			isa = PBXGroup;
+			children = (
+				BF1B360B17B4B8A700F95526 /* BibDeskWrapperEnabler.h */,
+				BF1B360C17B4B8A700F95526 /* BibDeskWrapperEnabler.m */,
+				BF1B361417B4BBF000F95526 /* BDSKLinkedFileDropboxEnabler.h */,
+				BF1B361517B4BBF000F95526 /* BDSKLinkedFileDropboxEnabler.m */,
+				BF1B360917B4B8A700F95526 /* Supporting Files */,
+			);
+			path = BibDeskWrapperEnabler;
+			sourceTree = "<group>";
+		};
+		BF1B360917B4B8A700F95526 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BF1B360A17B4B8A700F95526 /* BibDeskWrapperEnabler-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		BF1B360417B4B8A600F95526 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF1B361617B4BBF000F95526 /* BDSKLinkedFileDropboxEnabler.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		BF1B35E117B4B75A00F95526 /* BibDeskWrapper */ = {
@@ -116,11 +178,29 @@
 			buildRules = (
 			);
 			dependencies = (
+				BF1B361217B4BA1600F95526 /* PBXTargetDependency */,
 			);
 			name = BibDeskWrapper;
 			productName = BibDeskWrapper;
 			productReference = BF1B35E217B4B75A00F95526 /* BibDeskWrapper.app */;
 			productType = "com.apple.product-type.application";
+		};
+		BF1B360517B4B8A600F95526 /* BibDeskWrapperEnabler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF1B360E17B4B8A700F95526 /* Build configuration list for PBXNativeTarget "BibDeskWrapperEnabler" */;
+			buildPhases = (
+				BF1B360217B4B8A600F95526 /* Sources */,
+				BF1B360317B4B8A600F95526 /* Frameworks */,
+				BF1B360417B4B8A600F95526 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BibDeskWrapperEnabler;
+			productName = BibDeskWrapperEnabler;
+			productReference = BF1B360617B4B8A600F95526 /* BibDeskWrapperEnabler.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
 		};
 /* End PBXNativeTarget section */
 
@@ -145,6 +225,7 @@
 			projectRoot = "";
 			targets = (
 				BF1B35E117B4B75A00F95526 /* BibDeskWrapper */,
+				BF1B360517B4B8A600F95526 /* BibDeskWrapperEnabler */,
 			);
 		};
 /* End PBXProject section */
@@ -154,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF1B361317B4BA1C00F95526 /* BibDeskWrapperEnabler.dylib in Resources */,
 				BF1B35F017B4B75B00F95526 /* InfoPlist.strings in Resources */,
 				BF1B35F617B4B75B00F95526 /* Credits.rtf in Resources */,
 				BF1B35FC17B4B75B00F95526 /* MainMenu.xib in Resources */,
@@ -172,7 +254,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BF1B360217B4B8A600F95526 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF1B360D17B4B8A700F95526 /* BibDeskWrapperEnabler.m in Sources */,
+				BF1B361717B4BBF000F95526 /* BDSKLinkedFileDropboxEnabler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BF1B361217B4BA1600F95526 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF1B360517B4B8A600F95526 /* BibDeskWrapperEnabler */;
+			targetProxy = BF1B361117B4BA1600F95526 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		BF1B35EE17B4B75B00F95526 /* InfoPlist.strings */ = {
@@ -266,6 +365,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BibDeskWrapper/BibDeskWrapper-Prefix.pch";
 				INFOPLIST_FILE = "BibDeskWrapper/BibDeskWrapper-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -278,8 +378,31 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BibDeskWrapper/BibDeskWrapper-Prefix.pch";
 				INFOPLIST_FILE = "BibDeskWrapper/BibDeskWrapper-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		BF1B360F17B4B8A700F95526 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BibDeskWrapperEnabler/BibDeskWrapperEnabler-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BF1B361017B4B8A700F95526 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BibDeskWrapperEnabler/BibDeskWrapperEnabler-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -300,6 +423,15 @@
 			buildConfigurations = (
 				BF1B360017B4B75B00F95526 /* Debug */,
 				BF1B360117B4B75B00F95526 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF1B360E17B4B8A700F95526 /* Build configuration list for PBXNativeTarget "BibDeskWrapperEnabler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF1B360F17B4B8A700F95526 /* Debug */,
+				BF1B361017B4B8A700F95526 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
