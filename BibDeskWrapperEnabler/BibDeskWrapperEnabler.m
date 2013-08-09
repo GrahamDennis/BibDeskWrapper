@@ -38,6 +38,7 @@
 
 #import "BibDeskWrapperEnabler.h"
 #import "BDSKLinkedFileDropboxEnabler.h"
+#import "BibDeskWrapperEnablerSparkle.h"
 
 static void enableWebKitNightlyBehaviour() __attribute__ ((constructor));
 
@@ -69,7 +70,8 @@ static void myApplicationWillFinishLaunching(CFNotificationCenterRef center, voi
     [userDefaults setInteger:RunStateRunning forKey:WKNERunState];
     [userDefaults synchronize];
     
-    initializeLinkedFileDropboxPatch();
+    GRDInitializeLinkedFileDropboxPatch();
+    GRDInitializeSparkle();
 }
 
 static void myApplicationWillTerminate(CFNotificationCenterRef center, void *observer, CFStringRef name, const void *object, CFDictionaryRef userInfo)
@@ -79,7 +81,7 @@ static void myApplicationWillTerminate(CFNotificationCenterRef center, void *obs
     [userDefaults synchronize];
 }
 
-NSBundle *bibdeskWrapperBundle()
+NSBundle *GRDBibDeskLauncherBundle()
 {
     NSString *executablePath = [NSString stringWithUTF8String:bibdeskWrapperAppPath];
     NSRange appLocation = [executablePath rangeOfString:@".app/" options:NSBackwardsSearch];
@@ -117,7 +119,7 @@ static void poseAsBibDeskWrapperApp()
         
         // Register the application with LaunchServices, passing a customized registration dictionary that
         // uses the WebKit launcher as the application bundle.
-        NSBundle *bundle = bibdeskWrapperBundle();
+        NSBundle *bundle = GRDBibDeskLauncherBundle();
         NSMutableDictionary *checkInDictionary = [[bundle infoDictionary] mutableCopy];
         [checkInDictionary setObject:[bundle bundlePath] forKey:@"LSBundlePath"];
         [checkInDictionary setObject:[checkInDictionary objectForKey:(NSString *)kCFBundleNameKey] forKey:@"LSDisplayName"];
@@ -163,7 +165,7 @@ static void enableWebKitNightlyBehaviour()
                                     myApplicationWillTerminate, (CFStringRef) NSApplicationWillTerminateNotification,
                                     NULL, CFNotificationSuspensionBehaviorDeliverImmediately);
     
-    NSLog(@"BibDeskWrapper %@ initialized.", [bibdeskWrapperBundle() objectForInfoDictionaryKey:@"CFBundleShortVersionString"]);
+    NSLog(@"BibDeskWrapper %@ initialized.", [GRDBibDeskLauncherBundle() objectForInfoDictionaryKey:@"CFBundleShortVersionString"]);
     
     [pool release];
 }

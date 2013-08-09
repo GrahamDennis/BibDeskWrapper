@@ -6,4 +6,4 @@
 //  Copyright (c) 2013 Graham Dennis. All rights reserved.
 //
 
-extern void initializeLinkedFileDropboxPatch();
+extern void GRDInitializeLinkedFileDropboxPatch();

@@ -29,7 +29,7 @@ static id BDSKLinkedAliasFileURLPatch(id self, SEL _cmd)
 {
     const FSRef *fileRef = NULL;
     NSURL *lastURL = nil;
-    NSInteger isInitial = NO;
+    ptrdiff_t isInitial = NO;
     id delegate = nil;
     if (!object_getInstanceVariable(self, "fileRef", (void **)&fileRef) ||
         !object_getInstanceVariable(self, "lastURL", (void **)&lastURL) ||
@@ -70,7 +70,7 @@ static id BDSKLinkedAliasFileURLPatch(id self, SEL _cmd)
     return [(NSURL *)aURL autorelease];
 }
 
-void initializeLinkedFileDropboxPatch()
+void GRDInitializeLinkedFileDropboxPatch()
 {
     // Override some Sparkle behaviour
     Method methodToPatch = class_getInstanceMethod(objc_getRequiredClass("BDSKLinkedAliasFile"), @selector(URL));

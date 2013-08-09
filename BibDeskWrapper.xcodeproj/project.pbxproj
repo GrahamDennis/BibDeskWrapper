@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF16BA3517B500E60003C830 /* BibDeskWrapperEnablerSparkle.h in Headers */ = {isa = PBXBuildFile; fileRef = BF16BA3317B500E60003C830 /* BibDeskWrapperEnablerSparkle.h */; };
+		BF16BA3617B500E60003C830 /* BibDeskWrapperEnablerSparkle.m in Sources */ = {isa = PBXBuildFile; fileRef = BF16BA3417B500E60003C830 /* BibDeskWrapperEnablerSparkle.m */; };
 		BF1B35E617B4B75A00F95526 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1B35E517B4B75A00F95526 /* Cocoa.framework */; };
 		BF1B35F017B4B75B00F95526 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF1B35EE17B4B75B00F95526 /* InfoPlist.strings */; };
 		BF1B35F217B4B75B00F95526 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1B35F117B4B75B00F95526 /* main.m */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BF16BA3317B500E60003C830 /* BibDeskWrapperEnablerSparkle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BibDeskWrapperEnablerSparkle.h; sourceTree = "<group>"; };
+		BF16BA3417B500E60003C830 /* BibDeskWrapperEnablerSparkle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BibDeskWrapperEnablerSparkle.m; sourceTree = "<group>"; };
 		BF1B35E217B4B75A00F95526 /* BibDeskWrapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BibDeskWrapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF1B35E517B4B75A00F95526 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		BF1B35E817B4B75A00F95526 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -151,6 +155,8 @@
 				BF1B360C17B4B8A700F95526 /* BibDeskWrapperEnabler.m */,
 				BF1B361417B4BBF000F95526 /* BDSKLinkedFileDropboxEnabler.h */,
 				BF1B361517B4BBF000F95526 /* BDSKLinkedFileDropboxEnabler.m */,
+				BF16BA3317B500E60003C830 /* BibDeskWrapperEnablerSparkle.h */,
+				BF16BA3417B500E60003C830 /* BibDeskWrapperEnablerSparkle.m */,
 				BF1B360917B4B8A700F95526 /* Supporting Files */,
 			);
 			path = BibDeskWrapperEnabler;
@@ -184,6 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF1B361617B4BBF000F95526 /* BDSKLinkedFileDropboxEnabler.h in Headers */,
+				BF16BA3517B500E60003C830 /* BibDeskWrapperEnablerSparkle.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +295,7 @@
 			files = (
 				BF1B360D17B4B8A700F95526 /* BibDeskWrapperEnabler.m in Sources */,
 				BF1B361717B4BBF000F95526 /* BDSKLinkedFileDropboxEnabler.m in Sources */,
+				BF16BA3617B500E60003C830 /* BibDeskWrapperEnablerSparkle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,6 +470,7 @@
 				BF1B361017B4B8A700F95526 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
