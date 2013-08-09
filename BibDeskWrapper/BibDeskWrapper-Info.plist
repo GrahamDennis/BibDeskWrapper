@@ -4,10 +4,250 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>bdskcache</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>cacheDoc.icns</string>
+			<key>CFBundleTypeName</key>
+			<string>BibDesk Item</string>
+			<key>CFBundleTypeRole</key>
+			<string>Viewer</string>
+			<key>NSDocumentClass</key>
+			<string>BibDocument</string>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>bdsksearch</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>searchDocIcon.icns</string>
+			<key>CFBundleTypeName</key>
+			<string>BibDesk Search Group</string>
+			<key>CFBundleTypeRole</key>
+			<string>Viewer</string>
+			<key>NSDocumentClass</key>
+			<string>BibDocument</string>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>bib</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>bibDocIcon.icns</string>
+			<key>CFBundleTypeName</key>
+			<string>BibTeX Database</string>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>NSDocumentClass</key>
+			<string>BibDocument</string>
+			<key>NSExportableAs</key>
+			<array>
+				<string>Minimal BibTeX Database</string>
+				<string>RIS/Medline File</string>
+				<string>Amsrefs LTB</string>
+				<string>EndNote XML</string>
+				<string>MODS XML</string>
+				<string>Atom XML</string>
+				<string>BibTeX and Papers Archive</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>bib</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>bibDocIcon.icns</string>
+			<key>CFBundleTypeName</key>
+			<string>Minimal BibTeX Database</string>
+			<key>CFBundleTypeRole</key>
+			<string>None</string>
+			<key>LSTypeIsPackage</key>
+			<false/>
+			<key>NSDocumentClass</key>
+			<string>BibDocument</string>
+			<key>NSPersistentStoreTypeKey</key>
+			<string>Binary</string>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>ris</string>
+				<string>fcgi</string>
+				<string>refman</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>risDocIcon.icns</string>
+			<key>CFBundleTypeMIMETypes</key>
+			<array>
+				<string>application/x-Research-Info-Systems</string>
+			</array>
+			<key>CFBundleTypeName</key>
+			<string>RIS/Medline File</string>
+			<key>CFBundleTypeRole</key>
+			<string>Viewer</string>
+			<key>NSDocumentClass</key>
+			<string>BibDocument</string>
+			<key>NSExportableAs</key>
+			<array>
+				<string>Minimal BibTeX Database</string>
+				<string>RIS/Medline File</string>
+				<string>Amsrefs LTB</string>
+				<string>EndNote XML</string>
+				<string>MODS XML</string>
+				<string>Atom XML</string>
+				<string>BibTeX and Papers Archive</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>txt</string>
+				<string>text</string>
+				<string>*</string>
+			</array>
+			<key>CFBundleTypeMIMETypes</key>
+			<array>
+				<string>text/plain</string>
+			</array>
+			<key>CFBundleTypeName</key>
+			<string>NSStringPboardType</string>
+			<key>CFBundleTypeOSTypes</key>
+			<array>
+				<string>****</string>
+			</array>
+			<key>CFBundleTypeRole</key>
+			<string>Viewer</string>
+			<key>NSDocumentClass</key>
+			<string>BibDocument</string>
+			<key>NSExportableAs</key>
+			<array>
+				<string>BibTeX Database</string>
+				<string>RIS/Medline File</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>ltb</string>
+			</array>
+			<key>CFBundleTypeName</key>
+			<string>Amsrefs LTB</string>
+			<key>CFBundleTypeRole</key>
+			<string>None</string>
+			<key>LSTypeIsPackage</key>
+			<false/>
+			<key>NSPersistentStoreTypeKey</key>
+			<string>Binary</string>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>xml</string>
+			</array>
+			<key>CFBundleTypeName</key>
+			<string>EndNote XML</string>
+			<key>CFBundleTypeRole</key>
+			<string>None</string>
+			<key>LSTypeIsPackage</key>
+			<false/>
+			<key>NSPersistentStoreTypeKey</key>
+			<string>Binary</string>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>mod</string>
+			</array>
+			<key>CFBundleTypeName</key>
+			<string>MODS XML</string>
+			<key>CFBundleTypeRole</key>
+			<string>None</string>
+			<key>LSTypeIsPackage</key>
+			<false/>
+			<key>NSPersistentStoreTypeKey</key>
+			<string>Binary</string>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>atom</string>
+			</array>
+			<key>CFBundleTypeMIMETypes</key>
+			<array>
+				<string>application/atom+xml</string>
+			</array>
+			<key>CFBundleTypeName</key>
+			<string>Atom XML</string>
+			<key>CFBundleTypeRole</key>
+			<string>None</string>
+			<key>LSTypeIsPackage</key>
+			<false/>
+			<key>NSPersistentStoreTypeKey</key>
+			<string>Binary</string>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>tgz</string>
+			</array>
+			<key>CFBundleTypeName</key>
+			<string>BibTeX and Papers Archive</string>
+			<key>CFBundleTypeRole</key>
+			<string>None</string>
+			<key>LSTypeIsPackage</key>
+			<false/>
+			<key>NSPersistentStoreTypeKey</key>
+			<string>Binary</string>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>txt</string>
+			</array>
+			<key>CFBundleTypeMIMETypes</key>
+			<array>
+				<string>text/plain</string>
+			</array>
+			<key>CFBundleTypeName</key>
+			<string>Text Template</string>
+			<key>CFBundleTypeRole</key>
+			<string>None</string>
+			<key>LSTypeIsPackage</key>
+			<false/>
+			<key>NSDocumentClass</key>
+			<string>BDSKTemplateDocument</string>
+			<key>NSPersistentStoreTypeKey</key>
+			<string>Binary</string>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>rtf</string>
+			</array>
+			<key>CFBundleTypeName</key>
+			<string>Rich Text Template</string>
+			<key>CFBundleTypeRole</key>
+			<string>None</string>
+			<key>LSTypeIsPackage</key>
+			<false/>
+			<key>NSDocumentClass</key>
+			<string>BDSKTemplateDocument</string>
+			<key>NSPersistentStoreTypeKey</key>
+			<string>Binary</string>
+		</dict>
+	</array>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFile</key>
-	<string></string>
+	<string>FolderPenIcon</string>
 	<key>CFBundleIdentifier</key>
 	<string>me.grahamdennis.${PRODUCT_NAME:rfc1034identifier}</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -20,6 +260,33 @@
 	<string>1.0</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>BibDesk publication URL</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>x-bdsk</string>
+			</array>
+			<key>LSIsAppleDefaultForScheme</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>Search group server URL</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>x-bdsk-search</string>
+			</array>
+			<key>LSIsAppleDefaultForScheme</key>
+			<true/>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>LSApplicationCategoryType</key>
@@ -32,5 +299,289 @@
 	<string>MainMenu</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
+	<key>NSServices</key>
+	<array>
+		<dict>
+			<key>NSKeyEquivalent</key>
+			<dict>
+				<key>default</key>
+				<string>K</string>
+			</dict>
+			<key>NSMenuItem</key>
+			<dict>
+				<key>default</key>
+				<string>BibDesk/Complete Cite Key</string>
+			</dict>
+			<key>NSMessage</key>
+			<string>completeCiteKeyFromSelection</string>
+			<key>NSPortName</key>
+			<string>BibDesk</string>
+			<key>NSReturnTypes</key>
+			<array>
+				<string>NSStringPboardType</string>
+			</array>
+			<key>NSSendTypes</key>
+			<array>
+				<string>NSStringPboardType</string>
+			</array>
+		</dict>
+		<dict>
+			<key>NSMenuItem</key>
+			<dict>
+				<key>default</key>
+				<string>BibDesk/New Document With Selection</string>
+			</dict>
+			<key>NSMessage</key>
+			<string>openDocumentFromSelection</string>
+			<key>NSPortName</key>
+			<string>BibDesk</string>
+			<key>NSSendTypes</key>
+			<array>
+				<string>NSStringPboardType</string>
+			</array>
+		</dict>
+		<dict>
+			<key>NSMenuItem</key>
+			<dict>
+				<key>default</key>
+				<string>BibDesk/Add to Bibliography</string>
+			</dict>
+			<key>NSMessage</key>
+			<string>addPublicationsFromSelection</string>
+			<key>NSPortName</key>
+			<string>BibDesk</string>
+			<key>NSSendTypes</key>
+			<array>
+				<string>NSStringPboardType</string>
+				<string>NSFilenamesPboardType</string>
+			</array>
+		</dict>
+		<dict>
+			<key>NSKeyEquivalent</key>
+			<dict>
+				<key>default</key>
+				<string>J</string>
+			</dict>
+			<key>NSMenuItem</key>
+			<dict>
+				<key>default</key>
+				<string>BibDesk/Complete Citation</string>
+			</dict>
+			<key>NSMessage</key>
+			<string>completeCitationFromSelection</string>
+			<key>NSPortName</key>
+			<string>BibDesk</string>
+			<key>NSReturnTypes</key>
+			<array>
+				<string>NSStringPboardType</string>
+			</array>
+			<key>NSSendTypes</key>
+			<array>
+				<string>NSStringPboardType</string>
+			</array>
+		</dict>
+		<dict>
+			<key>NSMenuItem</key>
+			<dict>
+				<key>default</key>
+				<string>BibDesk/Complete Text Bibliography</string>
+			</dict>
+			<key>NSMessage</key>
+			<string>completeTextBibliographyFromSelection</string>
+			<key>NSPortName</key>
+			<string>BibDesk</string>
+			<key>NSReturnTypes</key>
+			<array>
+				<string>NSStringPboardType</string>
+			</array>
+			<key>NSSendTypes</key>
+			<array>
+				<string>NSStringPboardType</string>
+			</array>
+		</dict>
+		<dict>
+			<key>NSMenuItem</key>
+			<dict>
+				<key>default</key>
+				<string>BibDesk/Complete Rich Text Bibliography</string>
+			</dict>
+			<key>NSMessage</key>
+			<string>completeRichBibliographyFromSelection</string>
+			<key>NSPortName</key>
+			<string>BibDesk</string>
+			<key>NSReturnTypes</key>
+			<array>
+				<string>NSRTFPboardType</string>
+			</array>
+			<key>NSSendTypes</key>
+			<array>
+				<string>NSStringPboardType</string>
+			</array>
+		</dict>
+		<dict>
+			<key>NSMenuItem</key>
+			<dict>
+				<key>default</key>
+				<string>BibDesk/Show Reference With Cite Key</string>
+			</dict>
+			<key>NSMessage</key>
+			<string>showPubWithKey</string>
+			<key>NSPortName</key>
+			<string>BibDesk</string>
+			<key>NSSendTypes</key>
+			<array>
+				<string>NSStringPboardType</string>
+			</array>
+		</dict>
+		<dict>
+			<key>NSMenuItem</key>
+			<dict>
+				<key>default</key>
+				<string>BibDesk/Open URL in BibDesk Web Group</string>
+			</dict>
+			<key>NSMessage</key>
+			<string>openURLInWebGroup</string>
+			<key>NSPortName</key>
+			<string>BibDesk</string>
+			<key>NSRequiredContext</key>
+			<dict>
+				<key>NSTextContent</key>
+				<string>URL</string>
+			</dict>
+			<key>NSSendTypes</key>
+			<array>
+				<string>NSURLPboardType</string>
+				<string>NSStringPboardType</string>
+			</array>
+		</dict>
+	</array>
+	<key>UTExportedTypeDeclarations</key>
+	<array>
+		<dict>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.data</string>
+			</array>
+			<key>UTTypeDescription</key>
+			<string>BibDesk Item</string>
+			<key>UTTypeIconFile</key>
+			<string>cacheDoc.icns</string>
+			<key>UTTypeIdentifier</key>
+			<string>net.sourceforge.bibdesk.bdskcache</string>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>bdskcache</string>
+				</array>
+			</dict>
+		</dict>
+		<dict>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.data</string>
+			</array>
+			<key>UTTypeDescription</key>
+			<string>BibDesk Search Group</string>
+			<key>UTTypeIconFile</key>
+			<string>searchGroupIcon.icns</string>
+			<key>UTTypeIdentifier</key>
+			<string>net.sourceforge.bibdesk.bdsksearch</string>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>bdsksearch</string>
+				</array>
+			</dict>
+		</dict>
+	</array>
+	<key>UTImportedTypeDeclarations</key>
+	<array>
+		<dict>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.plain-text</string>
+			</array>
+			<key>UTTypeDescription</key>
+			<string>BibTeX Database</string>
+			<key>UTTypeIconFile</key>
+			<string>bibDocIcon.icns</string>
+			<key>UTTypeIdentifier</key>
+			<string>org.tug.tex.bibtex</string>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>bib</string>
+				</array>
+			</dict>
+		</dict>
+		<dict>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.plain-text</string>
+			</array>
+			<key>UTTypeDescription</key>
+			<string>RIS/Medline File</string>
+			<key>UTTypeIconFile</key>
+			<string>risDocIcon.icns</string>
+			<key>UTTypeIdentifier</key>
+			<string>net.sourceforge.bibdesk.ris</string>
+			<key>UTTypeReferenceURL</key>
+			<string>http://www.refman.com/support/risformat_intro.asp</string>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>ris</string>
+					<string>fcgi</string>
+					<string>refman</string>
+				</array>
+				<key>public.mime-type</key>
+				<array>
+					<string>application/x-Research-Info-Systems</string>
+					<string>application/x-endnote-refer</string>
+				</array>
+			</dict>
+		</dict>
+		<dict>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.plain-text</string>
+			</array>
+			<key>UTTypeDescription</key>
+			<string>Web of Science File</string>
+			<key>UTTypeIdentifier</key>
+			<string>net.sourceforge.bibdesk.webofscience</string>
+			<key>UTTypeReferenceURL</key>
+			<string>http://portal.isiknowledge.com/ISI/help/h_markwosa.htm</string>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.mime-type</key>
+				<array>
+					<string>application/x-Inst-for-Scientific-Info</string>
+				</array>
+			</dict>
+		</dict>
+		<dict>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>com.apple.package</string>
+				<string>public.composite-content</string>
+			</array>
+			<key>UTTypeDescription</key>
+			<string>script bundle</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.apple.applescript.script-bundle</string>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>scptd</string>
+				</array>
+			</dict>
+		</dict>
+	</array>
 </dict>
 </plist>

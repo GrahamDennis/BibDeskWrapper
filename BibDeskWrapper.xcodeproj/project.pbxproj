@@ -18,6 +18,11 @@
 		BF1B361317B4BA1C00F95526 /* BibDeskWrapperEnabler.dylib in Resources */ = {isa = PBXBuildFile; fileRef = BF1B360617B4B8A600F95526 /* BibDeskWrapperEnabler.dylib */; };
 		BF1B361617B4BBF000F95526 /* BDSKLinkedFileDropboxEnabler.h in Headers */ = {isa = PBXBuildFile; fileRef = BF1B361417B4BBF000F95526 /* BDSKLinkedFileDropboxEnabler.h */; };
 		BF1B361717B4BBF000F95526 /* BDSKLinkedFileDropboxEnabler.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1B361517B4BBF000F95526 /* BDSKLinkedFileDropboxEnabler.m */; };
+		BF1B361B17B4D2AF00F95526 /* bibDocIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = BF1B361917B4D2AF00F95526 /* bibDocIcon.icns */; };
+		BF1B361C17B4D2AF00F95526 /* FolderPenIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = BF1B361A17B4D2AF00F95526 /* FolderPenIcon.icns */; };
+		BF1B362017B4D3B400F95526 /* cacheDoc.icns in Resources */ = {isa = PBXBuildFile; fileRef = BF1B361F17B4D3B400F95526 /* cacheDoc.icns */; };
+		BF1B362217B4D3C300F95526 /* searchDocIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = BF1B362117B4D3C300F95526 /* searchDocIcon.icns */; };
+		BF1B362417B4D3D700F95526 /* risDocIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = BF1B362317B4D3D700F95526 /* risDocIcon.icns */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +55,11 @@
 		BF1B360C17B4B8A700F95526 /* BibDeskWrapperEnabler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BibDeskWrapperEnabler.m; sourceTree = "<group>"; };
 		BF1B361417B4BBF000F95526 /* BDSKLinkedFileDropboxEnabler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSKLinkedFileDropboxEnabler.h; sourceTree = "<group>"; };
 		BF1B361517B4BBF000F95526 /* BDSKLinkedFileDropboxEnabler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDSKLinkedFileDropboxEnabler.m; sourceTree = "<group>"; };
+		BF1B361917B4D2AF00F95526 /* bibDocIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = bibDocIcon.icns; sourceTree = "<group>"; };
+		BF1B361A17B4D2AF00F95526 /* FolderPenIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = FolderPenIcon.icns; sourceTree = "<group>"; };
+		BF1B361F17B4D3B400F95526 /* cacheDoc.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = cacheDoc.icns; sourceTree = "<group>"; };
+		BF1B362117B4D3C300F95526 /* searchDocIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = searchDocIcon.icns; sourceTree = "<group>"; };
+		BF1B362317B4D3D700F95526 /* risDocIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = risDocIcon.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +126,7 @@
 				BF1B35F717B4B75B00F95526 /* GRDAppDelegate.h */,
 				BF1B35F817B4B75B00F95526 /* GRDAppDelegate.m */,
 				BF1B35FA17B4B75B00F95526 /* MainMenu.xib */,
+				BF1B361817B4D2A100F95526 /* Resources */,
 				BF1B35EC17B4B75B00F95526 /* Supporting Files */,
 			);
 			path = BibDeskWrapper;
@@ -151,6 +162,18 @@
 				BF1B360A17B4B8A700F95526 /* BibDeskWrapperEnabler-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BF1B361817B4D2A100F95526 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BF1B361917B4D2AF00F95526 /* bibDocIcon.icns */,
+				BF1B361A17B4D2AF00F95526 /* FolderPenIcon.icns */,
+				BF1B361F17B4D3B400F95526 /* cacheDoc.icns */,
+				BF1B362117B4D3C300F95526 /* searchDocIcon.icns */,
+				BF1B362317B4D3D700F95526 /* risDocIcon.icns */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +262,11 @@
 				BF1B35F017B4B75B00F95526 /* InfoPlist.strings in Resources */,
 				BF1B35F617B4B75B00F95526 /* Credits.rtf in Resources */,
 				BF1B35FC17B4B75B00F95526 /* MainMenu.xib in Resources */,
+				BF1B361B17B4D2AF00F95526 /* bibDocIcon.icns in Resources */,
+				BF1B361C17B4D2AF00F95526 /* FolderPenIcon.icns in Resources */,
+				BF1B362017B4D3B400F95526 /* cacheDoc.icns in Resources */,
+				BF1B362217B4D3C300F95526 /* searchDocIcon.icns in Resources */,
+				BF1B362417B4D3D700F95526 /* risDocIcon.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
