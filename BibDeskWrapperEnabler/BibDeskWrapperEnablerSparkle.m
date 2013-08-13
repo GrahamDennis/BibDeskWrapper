@@ -8,6 +8,7 @@
 
 #import "BibDeskWrapperEnablerSparkle.h"
 #import "BibDeskWrapperEnabler.h"
+#import <objc/runtime.h>
 
 @class SUUpdater;
 
@@ -18,7 +19,14 @@
 - (void)resetUpdateCycle;
 - (void)checkForUpdates:(id)sender;
 
+- (NSString *)pathToRelaunchForUpdater:(SUUpdater *)updater;
+
 @end
+
+static NSString *pathToRelaunchForUpdater(id self, SEL _cmd, SUUpdater *updater)
+{
+    return [GRDBibDeskLauncherBundle() bundlePath];
+}
 
 void GRDInitializeSparkle()
 {
@@ -41,6 +49,11 @@ void GRDInitializeSparkle()
     [updateMenuItem setTarget:updater];
     [applicationSubmenu insertItem:updateMenuItem atIndex:i];
     [updateMenuItem release];
+    
+    // ... make sure when Sparkle would relaunch BibDesk it actually relaunches BibDeskWrapper.
+    
+    Class BDSKAppControllerClass = NSClassFromString(@"BDSKAppController");
+    class_addMethod(BDSKAppControllerClass, @selector(pathToRelaunchForUpdater:), (IMP)pathToRelaunchForUpdater, "@@:@");
     
     [updater resetUpdateCycle];
 }
