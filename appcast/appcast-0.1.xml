@@ -1,0 +1,13 @@
+<item>
+<title>XMDS 0.1</title>
+<sparkle:releaseNotesLink>http://www.xmds.org/release-notes.html#version-0.1</sparkle:releaseNotesLink>
+<pubDate>Fri, 09 Aug 2013 21:28:11 +1000</pubDate>
+<enclosure
+url="http://sourceforge.net/projects/xmds/files//BibDeskWrapper-0.1.zip/download"
+sparkle:version="4"
+sparkle:shortVersionString="0.1"
+type="application/octet-stream"
+length="2201000"
+sparkle:dsaSignature="MCwCFDkkTOIFZQ/6pJyr1eWPXTh+MtflAhRn9a3E4b8QXGyiWIbSMR5FBYJNHw=="
+/>
+</item>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+    <channel>
+        <title>BibDeskWrapper Changelog</title>
+        <link>http://zmdns.sourceforge.net/bibdeskwrapper/appcast.xml</link>
+        <description>Most recent changes with links to updates.</description>
+        <language>en</language>
+        <item>
+            <title>BibDeskWrapper 0.1</title>
+            <sparkle:releaseNotesLink>http://zmdns.sourceforge.net/bibdeskwrapper/release-notes.html#version-0.1</sparkle:releaseNotesLink>
+            <pubDate>Fri, 09 Aug 2013 21:28:11 +1000</pubDate>
+            <enclosure url="http://sourceforge.net/projects/zmdns/files/BibDeskWrapper-0.1.zip/download" sparkle:version="4" sparkle:shortVersionString="0.1" type="application/octet-stream" length="2201000" sparkle:dsaSignature="MCwCFDkkTOIFZQ/6pJyr1eWPXTh+MtflAhRn9a3E4b8QXGyiWIbSMR5FBYJNHw=="/>
+        </item>
+    </channel>
+</rss>
