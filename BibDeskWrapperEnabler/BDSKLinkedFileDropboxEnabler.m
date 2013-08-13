@@ -51,8 +51,10 @@ static id BDSKLinkedAliasFileURLPatch(id self, SEL _cmd)
     if ((aURL == NULL || moved) && hadFileRef) {
         // fileRef was invalid, or URL moved, try to update it
         [self setFileRef:NULL];
-        if ((fileRef = [self fileRef]) != NULL)
+        if ((fileRef = [self fileRef]) != NULL) {
+            if (aURL) CFRelease(aURL);
             aURL = CFURLCreateFromFSRef(NULL, fileRef);
+        }
     }
     BOOL changed = ([(NSURL *)aURL isEqual:lastURL] == NO && (aURL != NULL || lastURL != nil)) || moved;
     if (changed) {
