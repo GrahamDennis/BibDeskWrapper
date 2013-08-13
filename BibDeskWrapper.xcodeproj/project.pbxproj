@@ -332,7 +332,7 @@
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
+			shellPath = /bin/bash;
 			shellScript = "set -o errexit\n\nPLISTBUDDY=\"/usr/libexec/PlistBuddy\"\n\ncd ${SRCROOT}\nBUILD=`git log --pretty=format:'' | wc -l`\n#BUILD=`./buildNumber.rb -d ../ | awk '{print $1}'`\n$PLISTBUDDY ${BUILT_PRODUCTS_DIR}/${FULL_PRODUCT_NAME}/Contents/Info.plist -c \"Set :CFBundleVersion $BUILD\"\n\nSHORTVERSION_NAME=`git describe --tags --always`\n$PLISTBUDDY ${BUILT_PRODUCTS_DIR}/${FULL_PRODUCT_NAME}/Contents/Info.plist -c \"Set :CFBundleShortVersionString $SHORTVERSION_NAME\"";
 		};
 /* End PBXShellScriptBuildPhase section */
