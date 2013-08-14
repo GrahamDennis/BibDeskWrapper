@@ -102,14 +102,14 @@ static void poseAsBibDeskWrapperApp()
     
     unsetenv("BibDeskWrapperAppPath");
     
-    // Set up the main bundle early so it points at Safari.app
+    // Set up the main bundle early so it points at BibDesk.app
     CFBundleGetMainBundle();
     
     if (systemVersion() < 0x1060) {
         if (!_CFGetProcessPath)
             return;
         
-        // Fiddle with CoreFoundation to have it pick up the executable path as being within WebKit.app
+        // Fiddle with CoreFoundation to have it pick up the executable path as being within BibDeskWrapper.app
         char **processPath = _CFGetProcessPath();
         *processPath = NULL;
         setenv("CFProcessPath", bibdeskWrapperAppPath, 1);
@@ -120,11 +120,11 @@ static void poseAsBibDeskWrapperApp()
             return;
         
         // Register the application with LaunchServices, passing a customized registration dictionary that
-        // uses the WebKit launcher as the application bundle.
+        // uses the BibDesk launcher as the application bundle.
         NSBundle *bundle = GRDBibDeskLauncherBundle();
         NSMutableDictionary *checkInDictionary = [[bundle infoDictionary] mutableCopy];
         [checkInDictionary setObject:[bundle bundlePath] forKey:@"LSBundlePath"];
-        [checkInDictionary setObject:[checkInDictionary objectForKey:(NSString *)kCFBundleNameKey] forKey:@"LSDisplayName"];
+        [checkInDictionary setObject:[[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString *)kCFBundleNameKey] forKey:@"LSDisplayName"];
         _RegisterApplication((CFDictionaryRef)checkInDictionary, 0);
         [checkInDictionary release];
     }
