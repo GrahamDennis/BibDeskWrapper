@@ -293,6 +293,8 @@
 	<string>public.app-category.reference</string>
 	<key>LSMinimumSystemVersion</key>
 	<string>${MACOSX_DEPLOYMENT_TARGET}</string>
+	<key>NSAppleScriptEnabled</key>
+	<true/>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2013 Graham Dennis. All rights reserved.</string>
 	<key>NSMainNibFile</key>
