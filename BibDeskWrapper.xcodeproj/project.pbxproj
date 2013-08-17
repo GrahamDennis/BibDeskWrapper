@@ -41,6 +41,7 @@
 		BF1B362017B4D3B400F95526 /* cacheDoc.icns in Resources */ = {isa = PBXBuildFile; fileRef = BF1B361F17B4D3B400F95526 /* cacheDoc.icns */; };
 		BF1B362217B4D3C300F95526 /* searchDocIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = BF1B362117B4D3C300F95526 /* searchDocIcon.icns */; };
 		BF1B362417B4D3D700F95526 /* risDocIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = BF1B362317B4D3D700F95526 /* risDocIcon.icns */; };
+		BF1BB90F17BC71800037C74F /* BibDesk.sdef in Resources */ = {isa = PBXBuildFile; fileRef = BF1BB90E17BC71800037C74F /* BibDesk.sdef */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,7 @@
 		BF1B361F17B4D3B400F95526 /* cacheDoc.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = cacheDoc.icns; sourceTree = "<group>"; };
 		BF1B362117B4D3C300F95526 /* searchDocIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = searchDocIcon.icns; sourceTree = "<group>"; };
 		BF1B362317B4D3D700F95526 /* risDocIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = risDocIcon.icns; sourceTree = "<group>"; };
+		BF1BB90E17BC71800037C74F /* BibDesk.sdef */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = BibDesk.sdef; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +199,7 @@
 		BF1B361817B4D2A100F95526 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				BF1BB90E17BC71800037C74F /* BibDesk.sdef */,
 				BF1B361917B4D2AF00F95526 /* bibDocIcon.icns */,
 				BF1B361A17B4D2AF00F95526 /* FolderPenIcon.icns */,
 				BF1B361F17B4D3B400F95526 /* cacheDoc.icns */,
@@ -302,6 +305,7 @@
 				BF1B362217B4D3C300F95526 /* searchDocIcon.icns in Resources */,
 				BF1B362417B4D3D700F95526 /* risDocIcon.icns in Resources */,
 				BF16BA3817B506630003C830 /* dsa_pub.pem in Resources */,
+				BF1BB90F17BC71800037C74F /* BibDesk.sdef in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
