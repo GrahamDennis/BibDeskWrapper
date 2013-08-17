@@ -1,18 +1,18 @@
 CSS: css/github.css
 
-# BibDeskWrapper [version-0.1.3]
+# BibDeskWrapper 0.1.3 [version-0.1.3]
 
 * Even better compatibility with AppleScripts. BibDeskWrapper now bundles BibDesk's AppleScript definitions.  Note that to use existing AppleScripts without changes requires `BibDeskWrapper.app` to be renamed to `BibDesk.app` and rename the actual `BibDesk.app` to something else (e.g. `BibDesk (original).app`).  If you are still having problems with AppleScripts, you may need to check if you have an old copy of BibDesk at `/Applications/TeX/BibDesk.app`.
 
-# BibDeskWrapper [version-0.1.2]
+# BibDeskWrapper 0.1.2 [version-0.1.2]
 
 * Better compatibility with AppleScripts. This requires `BibDeskWrapper.app` to be renamed to `BibDesk.app` and rename the actual `BibDesk.app` to something else (e.g. `BibDesk (original).app`).  If you are still having problems with AppleScripts, you may need to check if you have an old copy of BibDesk at `/Applications/TeX/BibDesk.app`.
 
-# BibDeskWrapper [version-0.1.1]
+# BibDeskWrapper 0.1.1 [version-0.1.1]
 
 * Correctly relaunch `BibDeskWrapper.app` when `BibDesk.app` is updated.
 * Minor bugfixes.
 
-# BibDeskWrapper [version-0.1]
+# BibDeskWrapper 0.1 [version-0.1]
 
 Initial release.
