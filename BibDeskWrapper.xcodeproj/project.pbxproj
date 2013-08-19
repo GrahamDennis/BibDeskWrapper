@@ -42,6 +42,7 @@
 		BF1B362217B4D3C300F95526 /* searchDocIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = BF1B362117B4D3C300F95526 /* searchDocIcon.icns */; };
 		BF1B362417B4D3D700F95526 /* risDocIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = BF1B362317B4D3D700F95526 /* risDocIcon.icns */; };
 		BF1BB90F17BC71800037C74F /* BibDesk.sdef in Resources */ = {isa = PBXBuildFile; fileRef = BF1BB90E17BC71800037C74F /* BibDesk.sdef */; };
+		BF7F567317BF38EE00D977B8 /* github.css in Copy CSS */ = {isa = PBXBuildFile; fileRef = BF7F567217BF38EE00D977B8 /* github.css */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,20 @@
 			remoteInfo = BibDeskWrapperEnabler;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BF7F567117BF38D200D977B8 /* Copy CSS */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = css;
+			dstSubfolderSpec = 7;
+			files = (
+				BF7F567317BF38EE00D977B8 /* github.css in Copy CSS */,
+			);
+			name = "Copy CSS";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		BF16BA3317B500E60003C830 /* BibDeskWrapperEnablerSparkle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BibDeskWrapperEnablerSparkle.h; sourceTree = "<group>"; };
@@ -90,6 +105,7 @@
 		BF1B362117B4D3C300F95526 /* searchDocIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = searchDocIcon.icns; sourceTree = "<group>"; };
 		BF1B362317B4D3D700F95526 /* risDocIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = risDocIcon.icns; sourceTree = "<group>"; };
 		BF1BB90E17BC71800037C74F /* BibDesk.sdef */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = BibDesk.sdef; sourceTree = "<group>"; };
+		BF7F567217BF38EE00D977B8 /* github.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = github.css; path = ../appcast/css/github.css; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +222,7 @@
 				BF1B362117B4D3C300F95526 /* searchDocIcon.icns */,
 				BF1B362317B4D3D700F95526 /* risDocIcon.icns */,
 				BF16BA3717B506630003C830 /* dsa_pub.pem */,
+				BF7F567217BF38EE00D977B8 /* github.css */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -233,6 +250,8 @@
 				BF1B35DF17B4B75A00F95526 /* Frameworks */,
 				BF1B35E017B4B75A00F95526 /* Resources */,
 				BF16BA4117B5080E0003C830 /* Update Version Numbers */,
+				BF7F567017BF389500D977B8 /* Generate Release Notes */,
+				BF7F567117BF38D200D977B8 /* Copy CSS */,
 			);
 			buildRules = (
 			);
@@ -338,6 +357,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
 			shellScript = "set -o errexit\n\nPLISTBUDDY=\"/usr/libexec/PlistBuddy\"\n\ncd ${SRCROOT}\nBUILD=`git log --pretty=format:'' | wc -l`\n#BUILD=`./buildNumber.rb -d ../ | awk '{print $1}'`\n$PLISTBUDDY ${BUILT_PRODUCTS_DIR}/${FULL_PRODUCT_NAME}/Contents/Info.plist -c \"Set :CFBundleVersion $BUILD\"\n\nSHORTVERSION_NAME=`git describe --tags --always`\n$PLISTBUDDY ${BUILT_PRODUCTS_DIR}/${FULL_PRODUCT_NAME}/Contents/Info.plist -c \"Set :CFBundleShortVersionString $SHORTVERSION_NAME\"";
+		};
+		BF7F567017BF389500D977B8 /* Generate Release Notes */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Release Notes";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "set -o errexit\n\n/opt/local/bin/multimarkdown -o ${SRCROOT}/appcast/release-notes.html ${SRCROOT}/release-notes.md\n\ncp ${SRCROOT}/appcast/release-notes.html ${BUILT_PRODUCTS_DIR}/${FULL_PRODUCT_NAME}/Contents/Resources/";
 		};
 /* End PBXShellScriptBuildPhase section */
 
