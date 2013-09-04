@@ -14,7 +14,7 @@ When modifying PDFs on multiple computers that are sync'ed via Dropbox, it is po
 
 When Dropbox updates the file on computer #1, it moves the original PDF into a path like `~/Dropbox/.dropbox.cache/<date>/filename (deleted xxxx).pdf`, and puts the new version of the file at the location of the computer.  While BibDesk is running, it prefers to track files via an `FSRef`, which is stable when a file is moved or renamed.  The behaviour of both Dropbox and BibDesk are separately quite reasonable, but when used together, cause the problem described above.
 
-BibDeskWrapper modifies the behaviour of BibDesk to prefer to track files via their pathname, but falls back to an `AliasHandle` (which includes a superset of the information in an `FSRef`) if no file exists at the original path.  This means that BibDeskWrapper's will correctly handle files which are renamed (provided a new file with the same name as the original isn't created).
+BibDeskWrapper modifies the behaviour of BibDesk to prefer to track files via their pathname, but falls back to an `AliasHandle` (which includes a superset of the information in an `FSRef`) if no file exists at the original path.  This means that BibDeskWrapper will correctly handle files which are renamed (provided a new file with the same name as the original isn't created).
 
 ## Why not submit a patch to BibDesk?
 
@@ -32,7 +32,7 @@ Simply rename the original `BibDesk.app` to something like `BibDesk (original).a
 
 ## How do I report bugs?
 
-If you're using BibDeskWrapper.app, please try to reproduce the bug with vanilla BibDesk before reporting the bug via the [BibDesk website][BibDesk].  If you are unable to reproduce the bug in vanilla BibDesk, please create an [issue][GitHubIssues] on the GitHub page for the project.
+If you're using BibDeskWrapper.app, please try to reproduce the bug with vanilla BibDesk before reporting the bug via the [BibDesk website][BibDesk].  If you are unable to reproduce the bug in vanilla BibDesk, please create an [issue][GitHubIssues] against BibDeskWrapper.
 
 
 
