@@ -6,6 +6,12 @@
         <description>Most recent changes with links to updates.</description>
         <language>en</language>
         <item>
+            <title>BibDeskWrapper 0.1.4</title>
+            <sparkle:releaseNotesLink>http://zmdns.sourceforge.net/bibdeskwrapper/release-notes.html#version-0.1.4</sparkle:releaseNotesLink>
+            <pubDate>Mon, 19 Aug 2013 22:14:57 +1000</pubDate>
+            <enclosure url="http://sourceforge.net/projects/zmdns/files//BibDeskWrapper-0.1.4.zip/download" sparkle:version="31" sparkle:shortVersionString="0.1.4" type="application/octet-stream" length="2215393" sparkle:dsaSignature="MC4CFQC9lbnpii9Cu6IhdPF46l2ytcsUEQIVALJ1mkhPKD7O13KdmVEWzB/zY3/T"/>
+        </item>
+        <item>
             <title>BibDeskWrapper 0.1.3</title>
             <sparkle:releaseNotesLink>http://zmdns.sourceforge.net/bibdeskwrapper/release-notes.html#version-0.1.3</sparkle:releaseNotesLink>
             <pubDate>Sat, 17 Aug 2013 14:47:22 +1000</pubDate>

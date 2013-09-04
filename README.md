@@ -32,10 +32,11 @@ Simply rename the original `BibDesk.app` to something like `BibDesk (original).a
 
 ## How do I report bugs?
 
-If you're using BibDeskWrapper.app, please try to reproduce the bug with vanilla BibDesk before reporting the bug via the [BibDesk website][BibDesk].  If you are unable to reproduce the bug in vanilla BibDesk, please send your bug report to bibdeskwrapper@grahamdennis.me
+If you're using BibDeskWrapper.app, please try to reproduce the bug with vanilla BibDesk before reporting the bug via the [BibDesk website][BibDesk].  If you are unable to reproduce the bug in vanilla BibDesk, please create an [issue][GitHubIssues] on the GitHub page for the project.
 
 
 
 [BibDesk]: http://bibdesk.sourceforge.net
 [Dropbox]: http://www.dropbox.com
 [patch-to-bibdesk]: http://sourceforge.net/p/bibdesk/mailman/message/30367586/
+[GitHubIssues]: https://github.com/GrahamDennis/BibDeskWrapper/issues

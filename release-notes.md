@@ -1,5 +1,9 @@
 CSS: css/github.css
 
+# BibDeskWrapper 0.1.5 [version-0.1.5]
+
+* Fix compatibility with the latest version of BibDesk.
+
 # BibDeskWrapper 0.1.4 [version-0.1.4]
 
 * First public release.

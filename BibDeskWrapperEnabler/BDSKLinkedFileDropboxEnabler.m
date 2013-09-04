@@ -17,12 +17,34 @@
 @interface NotAnObject
 
 - (const FSRef *)fileRef;
+- (void)updateFileRef;
 - (void)setFileRef:(const FSRef *)newFileRef;
 - (void)linkedFileURLChanged:(BDSKLinkedFile *)file;
 
 @end
 
 static id (*BDSKLinkedAliasFileURLOriginalImplementation)(id self, SEL _cmd);
+
+static void setFileRef(id self, FSRef *const fsRef)
+{
+    if ([self respondsToSelector:@selector(setFileRef:)])
+        [self setFileRef:fsRef];
+    else {
+        object_setInstanceVariable(self, "fileRef", fsRef);
+    }
+}
+
+static const FSRef *updateAndGetFileRef(id self)
+{
+    const FSRef *result = NULL;
+    if ([self respondsToSelector:@selector(fileRef)]) {
+        result = [self fileRef];
+    } else if ([self respondsToSelector:@selector(updateFileRef)]) {
+        [self updateFileRef];
+        object_getInstanceVariable(self, "fileRef", (void **)&result);
+    }
+    return result;
+}
 
 // Replacement implementation for -[BDSKLinkedFile URL]
 static id BDSKLinkedAliasFileURLPatch(id self, SEL _cmd)
@@ -35,23 +57,25 @@ static id BDSKLinkedAliasFileURLPatch(id self, SEL _cmd)
         !object_getInstanceVariable(self, "lastURL", (void **)&lastURL) ||
         !object_getInstanceVariable(self, "isInitial", (void **)&isInitial) ||
         !object_getInstanceVariable(self, "delegate", (void **)&delegate) ||
-        ![self respondsToSelector:@selector(fileRef)] ||
-        ![self respondsToSelector:@selector(setFileRef:)]) {
-        // Fall through to original implementation
-        return BDSKLinkedAliasFileURLOriginalImplementation(self, _cmd);
-    }
+        !([self respondsToSelector:@selector(fileRef)] ||
+          [self respondsToSelector:@selector(updateFileRef)])) {
+            // Fall through to original implementation
+            return BDSKLinkedAliasFileURLOriginalImplementation(self, _cmd);
+        }
     
     BOOL hadFileRef = fileRef != NULL;
     if (!hadFileRef) {
-        fileRef = [self fileRef];
+        fileRef = updateAndGetFileRef(self);
     }
     CFURLRef aURL = fileRef ? CFURLCreateFromFSRef(NULL, fileRef) : NULL;
     
     BOOL moved = [(NSURL *)aURL isEqual:lastURL] == NO && (aURL != NULL && lastURL != nil);
     if ((aURL == NULL || moved) && hadFileRef) {
         // fileRef was invalid, or URL moved, try to update it
-        [self setFileRef:NULL];
-        if ((fileRef = [self fileRef]) != NULL) {
+        setFileRef(self, NULL);
+        fileRef = updateAndGetFileRef(self);
+
+        if (fileRef != NULL) {
             if (aURL) CFRelease(aURL);
             aURL = CFURLCreateFromFSRef(NULL, fileRef);
         }
